@@ -17,6 +17,10 @@ app.get('/', (req,res) => {
 	res.status(200).send({message :'Mostrara todos los tipos' });
 })
 
+app.get('/menu', (req,res) => {
+	res.status(200).send({message:'Mostrara el contenido de la aplicacion'});
+})
+
 app.listen(port, (err)=>{
 	if(err) console.log(`Error en el servidor ${err}`);
 	console.log(`Servidor iniciado y corriendo en el puerto ${port}`);

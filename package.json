@@ -15,5 +15,8 @@
   "devDependencies": {
     "body-parser": "^1.15.2",
     "mongoose": "^4.6.4"
+  },
+  "engines" : {
+    "node":"4.5.0"
   }
 }
