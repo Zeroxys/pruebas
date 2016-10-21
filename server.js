@@ -14,11 +14,11 @@ app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
 
 app.get('/', (req,res) => {
-	res.status(200).send({message :'Mostrara todos los tipos' });
+	res.status(200).sendFile(__dirname + '/app/' + 'index.html');
 })
 
 app.get('/menu', (req,res) => {
-	res.status(200).send({message:'Mostrara el contenido de la aplicacion'});
+	res.status(200).send({message:'Hola enfermera'});
 })
 
 app.listen(port, (err)=>{

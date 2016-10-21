@@ -1,0 +1,17 @@
+{
+  "name": "pruebas",
+  "description": "pruebas en server express",
+  "main": "server.js",
+  "authors": [
+    "Miguel Zavala"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Zeroxys/pruebas",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

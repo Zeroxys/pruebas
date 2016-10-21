@@ -14,9 +14,13 @@
   },
   "devDependencies": {
     "body-parser": "^1.15.2",
+    "gulp": "^3.9.1",
+    "gulp-inject": "^4.1.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-nodemon": "^2.2.1",
     "mongoose": "^4.6.4"
   },
-  "engines" : {
-    "node":"4.5.0"
+  "engines": {
+    "node": "4.5.0"
   }
 }
