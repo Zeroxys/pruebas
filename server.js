@@ -19,7 +19,7 @@ app.get('/', (req,res) => {
 })
 
 app.get('/menu', (req,res) => {
-	res.status(200).send({message:'Hola enfermera'});
+	res.status(200).send({message:'Hola eermasa'});
 })
 
 app.listen(port, (err)=>{

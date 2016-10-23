@@ -2,19 +2,25 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<base href="/">
 	<title>Document</title>
 	<!-- bower:css -->
 	<link rel="stylesheet" href="lib/materialize/bin/materialize.css" />
 	<!-- endbower -->
+	<!-- inject:css -->
+	<link rel="stylesheet" href="/styles/styles.css">
+	<!-- endinject -->
 </head>
-<body>
-	<h1>Hi !</h1>
-	<p>Deploy in heroku</p>
-	<p>Cosas de la vida</p>
+<body ng-app="mascotte">
+	<div ng-view><div>
 </body>
 	<!-- bower:js -->
 	<script src="lib/jquery/dist/jquery.js"></script>
 	<script src="lib/angular/angular.js"></script>
 	<script src="lib/materialize/bin/materialize.js"></script>
+	<script src="lib/angular-route/angular-route.js"></script>
 	<!-- endbower -->
+	<!-- inject:js -->
+	<script src="/scripts/scripts.js"></script>
+	<!-- endinject -->
 </html>
