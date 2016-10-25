@@ -1,5 +1,38 @@
 body{
-	padding: 0;
-	margin: 0;
-	background-color: #263238;
+  padding: 0;
+  margin: 0;
+  color: #fafafa  ;
+}
+
+button{
+  width: 200px;
+  border-radius: 10px;
+}
+
+.videodog{
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+ 
+  position: fixed;    
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%); 
+  z-index: -1;
+  background-size: cover;
+}
+
+.bienvenida{
+  text-align: center;
+  margin-top: 6.2em;
+}
+.logo{
+  font-size: 300px;
+}
+.theme-color {
+    background-color: #3949AB;
+}
+.theme-color:hover {
+    background-color: #3F51B5;
 }
