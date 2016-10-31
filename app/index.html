@@ -14,15 +14,18 @@
 	<!-- endinject -->
 </head>
 <body ng-app="mascotte">
-	<div ng-view><div>
+	<div ui-view><div>
 </body>
 	<!-- bower:js -->
 	<script src="lib/jquery/dist/jquery.js"></script>
 	<script src="lib/angular/angular.js"></script>
 	<script src="lib/materialize/bin/materialize.js"></script>
-	<script src="lib/angular-route/angular-route.js"></script>
+	<script src="lib/satellizer/dist/satellizer.js"></script>
+	<script src="lib/angular-ui-router/release/angular-ui-router.js"></script>
 	<!-- endbower -->
 	<!-- inject:js -->
-	<script src="/scripts/scripts.js"></script>
+	<script src="/scripts/controllers/principalCtrl.js"></script>
+	<script src="/scripts/services/services.js"></script>
+	<script src="/scripts/app.js"></script>
 	<!-- endinject -->
 </html>

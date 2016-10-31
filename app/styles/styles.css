@@ -1,20 +1,19 @@
 body{
   padding: 0;
   margin: 0;
-  color: #fafafa  ;
+  color: #e0e0e0 ;
+  font-weight: bold;
+  font-style: medium;
+  font-size: 1em;
+  height: 100%;
 }
 
-button{
-  width: 200px;
-  border-radius: 10px;
-}
-
+/*Css del Login*/
 .videodog{
   min-width: 100%;
   min-height: 100%;
   width: auto;
   height: auto;
- 
   position: fixed;    
   top: 50%;
   left: 50%;
@@ -23,16 +22,77 @@ button{
   background-size: cover;
 }
 
-.bienvenida{
+.botones{
+  margin-top: 1.5em;
+}
+
+.social-button{
+  width: 12.5em;
+  height: 3em;
+  border-radius: .8em;
+}
+
+.social-button:hover{
+  background-color: #cfd8dc;
+}
+
+.bienvenida-container{
+  height: 550px;
+  position: absolute;
+  margin: auto;
+  top:0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   text-align: center;
-  margin-top: 6.2em;
 }
+
 .logo{
-  font-size: 300px;
+  font-size: 15em;
 }
-.theme-color {
-    background-color: #3949AB;
+
+.fb-theme-color {
+    background-color: #01579b;
 }
-.theme-color:hover {
-    background-color: #3F51B5;
+.tw-theme-color {
+    background-color: #039be5 ;
+}
+
+
+/*CSS 404*/
+
+.title-404{
+  height: 36em;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  margin: auto;
+  top:0;
+  right: 0;
+  bottom: 0;
+  left: 0;  
+}
+
+.title-404 i{
+  font-size: 5em;
+  color: red;
+}
+
+.img-404{
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: fixed;
+  background-size: cover;
+  background-image: url('../assets/img/404.jpg');
+  z-index: -1;
+}
+
+.contenido{
+  border-radius: 0.5em;
+  background-color: black;
+  padding: 1em;
+  margin-top: 8em;
+  opacity: 0.4;
 }

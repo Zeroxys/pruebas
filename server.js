@@ -14,12 +14,12 @@ app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
 app.use(express.static('app'))
 
-app.get('/', (req,res) => {
+app.get('/login', (req,res) => {
 	res.status(200).sendFile(__dirname + '/app/' + 'index.html');
 })
 
 app.get('/menu', (req,res) => {
-	res.status(200).send({message:'Hola eermasa'});
+	res.status(200).send({message:'Hola users'});
 })
 
 app.listen(port, (err)=>{
