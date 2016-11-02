@@ -8,20 +8,17 @@ body{
   height: 100%;
 }
 
-/*Css del Login*/
-.videodog{
+/*CSS LOGIN*/
+.imglogin{
   min-width: 100%;
   min-height: 100%;
   width: auto;
   height: auto;
-  position: fixed;    
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%); 
-  z-index: -1;
+  position: fixed;
   background-size: cover;
+  background-image: url('../assets/img/login2.jpg');
+  z-index: -1;
 }
-
 .botones{
   margin-top: 1.5em;
 }
@@ -29,7 +26,7 @@ body{
 .social-button{
   width: 12.5em;
   height: 3em;
-  border-radius: .8em;
+  border-radius: .5em;
 }
 
 .social-button:hover{
