@@ -1,30 +1,18 @@
 (function (){
 'use strict';
-    angular.module('mascotte', ['ui.router','satellizer','mascotte.controllers.loginCtrl'])
-   
-   .config(['$stateProvider', '$urlRouterProvider', '$sceDelegateProvider','$locationProvider',
-    function($stateProvider,$urlRouterProvider,$sceDelegateProvider,$locationProvider){
+    angular.module('mascotte', ['mascotte.routes','satellizer','mascotte.controllers.loginCtrl'])
 
+    .config(['$authProvider', function($authProvider){
 
-    $sceDelegateProvider.resourceUrlWhitelist([
-      'self',
-      '**'
-    ]);
-    $urlRouterProvider.otherwise('/main');
+      $authProvider.twitter({
+        url: 'https://api.twitter.com/oauth2/token',
+        authorizationEndpoint: 'https://api.twitter.com/oauth/authenticate',
+        redirectUri: window.location.origin,
+        oauthType: '1.0',
+        popupOptions: { width: 495, height: 645 }
+      });      
+
+    }])
     
-    $stateProvider
-      .state('login',{
-        url:'/login',
-        templateUrl:'../views/principal.html',
-        controller : 'principalCtrl'
-      })
-
-      .state('main',{
-        url:'/main',
-        templateUrl:'../views/404.html',
-        controller:'principalCtrl'
-      })
-   }])
-
 
 })()
