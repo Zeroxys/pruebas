@@ -14,7 +14,7 @@
     
     $stateProvider
       .state('login',{
-        url:'/login',
+        url:'/',
         templateUrl:'../views/principal.html',
         controller : 'principalCtrl'
       })
@@ -24,7 +24,7 @@
         templateUrl:'../views/menu.html'
       })
 
-      .state('not-fount',{
+      .state('not-found',{
         url:'/page-not-found',
         templateUrl:'../views/404.html',
         controller:'principalCtrl'

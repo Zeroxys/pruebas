@@ -8,12 +8,14 @@
     </div>
       
       <div class="col s12 m6 botones">
-        <button class="social-button waves-effect  btn fb-theme-color z-depth-5"><i class="fa fa-facebook "></i></button>
+        <button class="social-button waves-effect  btn fb-theme-color z-depth-5" ng-click="authenticate('facebook')"><i class="fa fa-facebook "></i></button>
 
       </div>
       <div class="col s12 m6 botones">
         <button class="social-button waves-effect btn tw-theme-color z-depth-5" ng-click="authenticate('twitter')"><i class="fa fa-twitter"></i></button>
-      </div>  
+      </div>
+
+      <button ng-click="salir()">salir</button>  
 
   </div>
 
